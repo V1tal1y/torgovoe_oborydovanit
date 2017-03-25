@@ -7,7 +7,6 @@
 	<link rel="shortcut icon" href="img/logo.png" type="image/png">
 	<link href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/libs.min.css">
-	<link rel="stylesheet" href="http://kenwheeler.github.io/slick/slick/slick.css">
 	<link rel="stylesheet" href="css/main.css">
 	
 	<script  src="js/libs.min.js"></script>
@@ -380,6 +379,28 @@
 					</ul>
 				</div>
 				
+				<div class="sidebar_listing_nav">
+					<h3>Cвойство/ назначение:</h3>
+					<a href="#">Манекен женский</a><br>
+					<a href="#">Манекены женские белые</a><br>
+					<a href="#">Манекены женские реалистичные</a><br>
+					<a href="#">Манекены женские сидячие</a><br>
+					<a href="#">Манекены куклы женские</a><br>
+					<a href="#">Манекен мужской</a><br>
+					<a href="#">Манекены мужские пластиковые</a><br>
+					<a href="#">Манекены мужские ростовые</a><br>
+					<a href="#">Манекены сидячие мужские</a><br>
+					<div class="lick_hiden">
+						<a href="#">Манекены мужские пластиковые</a><br>
+						<a href="#">Манекены мужские ростовые</a><br>
+						<a href="#">Манекены сидячие мужские</a>
+					</div>
+					
+					<div class="bl_viev">
+						<a href="#" class="viev_news"><b>показать больше</b> <i class="fa fa-long-arrow-down" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				
 				<div class="special">
 					<img src="img/left_woman.png" alt="">
 					<h3><a href="#">ПОДСТАВКИ ПОД УКРАШЕНИЯ</a></h3>
@@ -471,26 +492,69 @@
 				</nav>
 				<ul class="bread">
 					<li><a href="#">Главная</a></li>
-					<li>Торговое оборудование</li>
+					<li>Стеллажи</li>
 				</ul>
 				<div class="content">
-					<h3>Страница не найдена...</h3>
-					Ошибка. Похоже, запрашиваемая страница не найдена. Воспользуйтесь каталогом товаров или поиском по сайту
-					<img src="img/error404.jpg" alt="" class="img_error">
-					<div class="btn btn_white btn_back">Вернуться на главную</div>
+					<h3>Стеллажи</h3>
+					<div class="filtr">
+						<div class="filtr_search">
+							Товаров в категории:  <a href="#">23</a>
+						</div>
+						<div class="vief_part">
+							<b>Цена:</b>
+							<span>
+								от
+							</span>
+							<input type="text" value="500">
+							<span>
+								до
+							</span>
+							<input type="text" value="5 000">
+							<div class="range" data-min="1" data-max="900">
+								<label for="range"></label>
+								<input type="text" id="range_v1" readonly>
+								<input type="text" id="range_v2" readonly>
+								
+								<div id="slider-range"></div>
+							</div>
+						</div>
+						<div class="hide_filtr">
+							<label>
+								<b>Цвет:</b>
+								<select name="" id="">
+									<option value="">Венге</option>
+									<option value="">Венге</option>
+									<option value="">Венге</option>
+									<option value="">Венге</option>
+								</select>
+							</label>
+							<label>
+								<b>Ширина:</b>
+								<select name="" id="">
+									<option value="">120 см.</option>
+									<option value="">120 см.</option>
+									<option value="">120 см.</option>
+									<option value="">120 см.</option>
+								</select>
+							</label>
+						</div>
+					</div>
+					<div class="news_all filtr_all">
+						<a href="#" class="viev_news"><b>показать больше фильтров</b> <i class="fa fa-long-arrow-down" aria-hidden="true"></i></a>
+					</div>
+					
+					<div class="sort">
+						Сортировать товары:
+						<div class="sort_btn">
+							<button class="btn_sort  active">Дешевле</button>
+							<button class="btn_sort">Дороже</button>
+							<button class="btn_sort">По популярности</button>
+							<button class="btn_sort">По новинкам</button>
+						</div>
+					</div>
 					
 					
-					
-					
-					
-					
-					
-					
-					<div class="you_viev">
-						<h3>
-							<i class="fa fa-eye" aria-hidden="true"></i>
-							Вы просматривали
-						</h3>
+					<div class="main_product_list you_viev">
 						<ul>
 							<li>
 								<div class="img_blok">
@@ -513,6 +577,384 @@
 								<p>
 									<span>Арт.: </span> ПВ-2,5-25Ва2В-1
 								</p>
+								
+								<div class="favorites">
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+								</div>
+								<div class="hidden_product_info">
+									<button class="btn_hiden">Купить быстро</button>
+									Ширина <span>500</span><br>
+									Длинна ст <span>500</span><br>
+									Ширина трошк <span>500</span>
+								</div>
+							</li>
+							<li>
+								<div class="img_blok">
+									<img src="img/vtov1.jpg" alt="">
+									<div class="detal_t">
+										<div class="hit">ХИТ</div>
+										<div class="new">НОВОЕ</div>
+										<div class="stock">АКЦИЯ</div>
+									</div>
+								</div>
+								<a class="name">Примерочная с зеркалом П-1</a>
+								<div class="price">
+									<div class="old_price"><span>14 220 руб.</span></div>
+									<b>13 345 руб.</b>
+								</div>
+								<button class="btn">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i> 
+									В КОРЗИНУ
+								</button>
+								<p>
+									<span>Арт.: </span> ПВ-2,5-25Ва2В-1
+								</p>
+								
+								<div class="favorites">
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+								</div>
+								<div class="hidden_product_info">
+									<button class="btn_hiden">Купить быстро</button>
+									Ширина <span>500</span><br>
+									Длинна ст <span>500</span><br>
+									Ширина трошк <span>500</span>
+								</div>
+							</li>
+							<li>
+								<div class="img_blok">
+									<img src="img/vtov1.jpg" alt="">
+									<div class="detal_t">
+										<div class="hit">ХИТ</div>
+										<div class="new">НОВОЕ</div>
+										<div class="stock">АКЦИЯ</div>
+									</div>
+								</div>
+								<a class="name">Примерочная с зеркалом П-1</a>
+								<div class="price">
+									<div class="old_price"><span>14 220 руб.</span></div>
+									<b>13 345 руб.</b>
+								</div>
+								<button class="btn">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i> 
+									В КОРЗИНУ
+								</button>
+								<p>
+									<span>Арт.: </span> ПВ-2,5-25Ва2В-1
+								</p>
+								
+								<div class="favorites">
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+								</div>
+								<div class="hidden_product_info">
+									<button class="btn_hiden">Купить быстро</button>
+									Ширина <span>500</span><br>
+									Длинна ст <span>500</span><br>
+									Ширина трошк <span>500</span>
+								</div>
+							</li>
+							<li>
+								<div class="img_blok">
+									<img src="img/vtov1.jpg" alt="">
+									<div class="detal_t">
+										<div class="hit">ХИТ</div>
+										<div class="new">НОВОЕ</div>
+										<div class="stock">АКЦИЯ</div>
+									</div>
+								</div>
+								<a class="name">Примерочная с зеркалом П-1</a>
+								<div class="price">
+									<div class="old_price"><span>14 220 руб.</span></div>
+									<b>13 345 руб.</b>
+								</div>
+								<button class="btn">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i> 
+									В КОРЗИНУ
+								</button>
+								<p>
+									<span>Арт.: </span> ПВ-2,5-25Ва2В-1
+								</p>
+								
+								<div class="favorites">
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+								</div>
+								<div class="hidden_product_info">
+									<button class="btn_hiden">Купить быстро</button>
+									Ширина <span>500</span><br>
+									Длинна ст <span>500</span><br>
+									Ширина трошк <span>500</span>
+								</div>
+							</li>
+							<li>
+								<div class="img_blok">
+									<img src="img/vtov1.jpg" alt="">
+									<div class="detal_t">
+										<div class="hit">ХИТ</div>
+										<div class="new">НОВОЕ</div>
+										<div class="stock">АКЦИЯ</div>
+									</div>
+								</div>
+								<a class="name">Примерочная с зеркалом П-1</a>
+								<div class="price">
+									<div class="old_price"><span>14 220 руб.</span></div>
+									<b>13 345 руб.</b>
+								</div>
+								<button class="btn">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i> 
+									В КОРЗИНУ
+								</button>
+								<p>
+									<span>Арт.: </span> ПВ-2,5-25Ва2В-1
+								</p>
+								
+								<div class="favorites">
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+								</div>
+								<div class="hidden_product_info">
+									<button class="btn_hiden">Купить быстро</button>
+									Ширина <span>500</span><br>
+									Длинна ст <span>500</span><br>
+									Ширина трошк <span>500</span>
+								</div>
+							</li>
+							<li>
+								<div class="img_blok">
+									<img src="img/vtov1.jpg" alt="">
+									<div class="detal_t">
+										<div class="hit">ХИТ</div>
+									</div>
+								</div>
+								<a class="name">Примерочная с зеркалом с зеркалом П-1</a>
+								<div class="price">
+									<div class="old_price"><span>14 220 руб.</span></div>
+									<b>13 345 руб.</b>
+								</div>
+								<button class="btn">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i> 
+									В КОРЗИНУ
+								</button>
+								<p>
+									<span>Арт.: </span> ПВ-2,5-25Ва2В-1
+								</p>
+								<div class="favorites">
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+								</div>
+								<div class="hidden_product_info">
+									<button class="btn_hiden">Купить быстро</button>
+									Ширина <span>500</span><br>
+									Длинна ст <span>500</span><br>
+									Ширина трошк <span>500</span>
+								</div>
+							</li>
+							<li>
+								<div class="img_blok">
+									<img src="img/vtov1.jpg" alt="">
+									<div class="detal_t">
+										<div class="hit">ХИТ</div>
+										<div class="stock">АКЦИЯ</div>
+									</div>
+								</div>
+								<a class="name">Примерочная с зеркалом П-1</a>
+								<div class="price">
+									<div class="old_price"><span>14 220 руб.</span></div>
+									<b>13 345 руб.</b>
+								</div>
+								<button class="btn">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i> 
+									В КОРЗИНУ
+								</button>
+								<p>
+									<span>Арт.: </span> ПВ-2,5-25Ва2В-1
+								</p>
+								<div class="favorites">
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+								</div>
+								<div class="hidden_product_info">
+									<button class="btn_hiden">Купить быстро</button>
+									Ширина <span>500</span><br>
+									Длинна ст <span>500</span><br>
+									Ширина трошк <span>500</span>
+								</div>
+							</li>
+							<li>
+								<div class="img_blok">
+									<img src="img/vtov1.jpg" alt="">
+									<div class="detal_t">
+										<div class="new">НОВОЕ</div>
+										<div class="stock">АКЦИЯ</div>
+									</div>
+								</div>
+								<a class="name">Примерочная с зеркалом П-1</a>
+								<div class="price">
+									<div class="old_price"><span>14 220 руб.</span></div>
+									<b>13 345 руб.</b>
+								</div>
+								<button class="btn">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i> 
+									В КОРЗИНУ
+								</button>
+								<p>
+									<span>Арт.: </span> ПВ-2,5-25Ва2В-1
+								</p>
+								<div class="favorites">
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+								</div>
+								<div class="hidden_product_info">
+									<button class="btn_hiden">Купить быстро</button>
+									Ширина <span>500</span><br>
+									Длинна ст <span>500</span><br>
+									Ширина трошк <span>500</span>
+								</div>
+							</li>
+							<li>
+								<div class="img_blok">
+									<img src="img/vtov1.jpg" alt="">
+									<div class="detal_t">
+										<div class="hit">ХИТ</div>
+										<div class="new">НОВОЕ</div>
+										<div class="stock">АКЦИЯ</div>
+									</div>
+								</div>
+								<a class="name">Примерочная с зеркалом П-1</a>
+								<div class="price">
+									<div class="old_price"><span>14 220 руб.</span></div>
+									<b>13 345 руб.</b>
+								</div>
+								<button class="btn">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i> 
+									В КОРЗИНУ
+								</button>
+								<p>
+									<span>Арт.: </span> ПВ-2,5-25Ва2В-1
+								</p>
+								
+								<div class="favorites">
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+								</div>
+								<div class="hidden_product_info">
+									<button class="btn_hiden">Купить быстро</button>
+									Ширина <span>500</span><br>
+									Длинна ст <span>500</span><br>
+									Ширина трошк <span>500</span>
+								</div>
+							</li>
+							<li>
+								<div class="img_blok">
+									<img src="img/vtov1.jpg" alt="">
+									<div class="detal_t">
+										<div class="hit">ХИТ</div>
+										<div class="new">НОВОЕ</div>
+										<div class="stock">АКЦИЯ</div>
+									</div>
+								</div>
+								<a class="name">Примерочная с зеркалом П-1</a>
+								<div class="price">
+									<div class="old_price"><span>14 220 руб.</span></div>
+									<b>13 345 руб.</b>
+								</div>
+								<button class="btn">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i> 
+									В КОРЗИНУ
+								</button>
+								<p>
+									<span>Арт.: </span> ПВ-2,5-25Ва2В-1
+								</p>
+								
+								<div class="favorites">
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+								</div>
+								<div class="hidden_product_info">
+									<button class="btn_hiden">Купить быстро</button>
+									Ширина <span>500</span><br>
+									Длинна ст <span>500</span><br>
+									Ширина трошк <span>500</span>
+								</div>
+							</li>
+							<li>
+								<div class="img_blok">
+									<img src="img/vtov1.jpg" alt="">
+									<div class="detal_t">
+										<div class="hit">ХИТ</div>
+										<div class="new">НОВОЕ</div>
+										<div class="stock">АКЦИЯ</div>
+									</div>
+								</div>
+								<a class="name">Примерочная с зеркалом П-1</a>
+								<div class="price">
+									<div class="old_price"><span>14 220 руб.</span></div>
+									<b>13 345 руб.</b>
+								</div>
+								<button class="btn">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i> 
+									В КОРЗИНУ
+								</button>
+								<p>
+									<span>Арт.: </span> ПВ-2,5-25Ва2В-1
+								</p>
+								
+								<div class="favorites">
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+								</div>
+								<div class="hidden_product_info">
+									<button class="btn_hiden">Купить быстро</button>
+									Ширина <span>500</span><br>
+									Длинна ст <span>500</span><br>
+									Ширина трошк <span>500</span>
+								</div>
+							</li>
+							<li>
+								<div class="img_blok">
+									<img src="img/vtov1.jpg" alt="">
+									<div class="detal_t">
+										<div class="hit">ХИТ</div>
+										<div class="new">НОВОЕ</div>
+										<div class="stock">АКЦИЯ</div>
+									</div>
+								</div>
+								<a class="name">Примерочная с зеркалом П-1</a>
+								<div class="price">
+									<div class="old_price"><span>14 220 руб.</span></div>
+									<b>13 345 руб.</b>
+								</div>
+								<button class="btn">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i> 
+									В КОРЗИНУ
+								</button>
+								<p>
+									<span>Арт.: </span> ПВ-2,5-25Ва2В-1
+								</p>
+								
+								<div class="favorites">
+									<i class="fa fa-star-o" aria-hidden="true"></i>
+								</div>
+								<div class="hidden_product_info">
+									<button class="btn_hiden">Купить быстро</button>
+									Ширина <span>500</span><br>
+									Длинна ст <span>500</span><br>
+									Ширина трошк <span>500</span>
+								</div>
+							</li>
+							<li>
+								<div class="img_blok">
+									<img src="img/vtov1.jpg" alt="">
+									<div class="detal_t">
+										<div class="hit">ХИТ</div>
+										<div class="new">НОВОЕ</div>
+										<div class="stock">АКЦИЯ</div>
+									</div>
+								</div>
+								<a class="name">Примерочная с зеркалом П-1</a>
+								<div class="price">
+									<div class="old_price"><span>14 220 руб.</span></div>
+									<b>13 345 руб.</b>
+								</div>
+								<button class="btn">
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i> 
+									В КОРЗИНУ
+								</button>
+								<p>
+									<span>Арт.: </span> ПВ-2,5-25Ва2В-1
+								</p>
+								
 								<div class="favorites">
 									<i class="fa fa-star-o" aria-hidden="true"></i>
 								</div>
@@ -613,13 +1055,47 @@
 								</div>
 							</li>
 						</ul>
-						
-						<a href="#" class="viev_all">Смотреть все<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+						<div class="news_all">
+							<a href="#" class="viev_news">показать ещё <span>24</span> <i class="fa fa-long-arrow-down" aria-hidden="true"></i></a>
+							<a href="#" class="viev_right">Показать все </a>
+						</div>
 					</div>
 					
+					<div class="clr"></div>
 					
-					
-					
+					<h3 class="yellow">Накопители, торговые корзины</h3>
+					Для любого магазина важно правильно выставить свой продукт, что позволит увеличить продажи и привлечь боле клиентов. Зачастую продавцов выручают упрощенные варианты торгового оборудования - накопители и торговые корзины. Эти мобильные мини витрины позволяют менять товар ежедневно, обновлять ассортимент продукции для распродажи, показывать даже самые незаметные товары в полной красе, а также давать клиенту право выбора продукции на вид и ощупь.
+					<br><br>
+					<h3>Накопители для магазинов, виды и особенности</h3>
+					Большинство конструкций данного типа изготавливаются из дерева и металла. Последний вариант наиболее распространен ввиду удобства, экологичности и отсутствия осколков на поверхности. Металлические корзины и накопительные системы - это объемные ящики с сетчатой поверхностью, изготовленные из прутьев разного диаметра. Конструкции от производителей представлены самые разнообразные:
+					<br><br>
+					<ol class="ponter_mini">
+						<li>квадратные и круглые;</li>
+						<li>небольшой стеллаж;</li>
+						<li>несколько корзин на стойке;</li>
+						<li>стационарные на устойчивых ножках;</li>
+						<li>мобильные с колесиками для перемещения.</li>
+					</ol>
+					<br><br>
+					В нашей компании осуществляется реализации различных накопителей и корзин для торговых площадок любой направленности:
+					<br><br>
+					<ol class="ponter_mini">
+						<li>глубокий короб до 800 мм высотой с возможностью регулировки глубины корзины;</li>
+						<li>тележки накопители позволяют проводить выкладку нового товара быстро и без создания заторов в проходах;</li>
+						<li><a href="#">многоуровневые накопители</a> легко крепятся к стойке и могут использоваться для товаров одной категории - нижнее белье, чулочные изделия, игрушки, фрукты;</li>
+						<li>стойки в виде елочки с крючками способствует показу небольших товаров, которые нельзя выставлять на показ навалом;</li>
+						<li>стеллажи с корзинами легко монтируются рядом с кассами и колоннами, открывают взор мелким розничным продуктам - от приправ и шоколада до игрушек и бижутерии.</li>
+					</ol>
+					<br><br>
+					<h3>Плюсы накопителей</h3>
+					Отличительные свойства данного вида оборудования оценили многие управляющие и продавцы элитных и универсальных магазинов:
+					<br><br>
+					<ol class="ponter_mini">
+						<li>Корзина легко собирается и монтируется в нужном месте и также просто производится демонтаж. В отличие от стационарных <a href="#">стеллажей</a> и полок товар можно выставить в удобном месте, подталкивая тем самым клиента к покупке.</li>
+						<li>Накопители из металла обрабатываются по специальной технологии, не боятся погодных аномалий и влаги, что позволяет использовать данное оборудование на открытых рынках.</li>
+						<li>Мобильная корзина для торговли легко перемещается вместе с продукцией по залу, что упрощает работу продавцов и ускоряет выкладку новых моделей.</li>
+						<li>Товар доступен для любого клиента и нет необходимости искать консультанта для подбора размера или цвета изделия.</li>
+					</ol>
 					<div class="cons">
 						<div class="cons_botton">
 							<h3>НУЖНА КОНСУЛЬТАЦИЯ?</h3>
