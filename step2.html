@@ -394,407 +394,222 @@
 					</a>
 				</nav>
 				<ul class="bread">
-					<li><a href="#">Моя корзина</a></li>
-					<li><a href="#">Выбор доставки и оплаты</a></li>
+					<li>Моя корзина</li>
+					<li><b>Выбор доставки и оплаты</b></li>
 					<li>Подтверждение</li>
 				</ul> 
 				<div class="content">
 					
-					<table class="table_basket">
-						<thead>
-							<tr>
-								<td></td>
-								<td>Название товара</td>
-								<td>Кол-во</td>
-								<td>Атрибут</td>
-								<td>Цена за шт.</td>
-								<td>Общая цена</td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<div class="favorites">
-										<i class="fa fa-star-o" aria-hidden="true"></i>
+					<div class="decor">
+						<div class="left">
+							<form>
+								<div class="main_input grey">
+									<h3 class="points">
+										<span>
+											Тип плательщика
+										</span>
+										<span></span>
+										<span>
+											<input type="button" value="Физ.лицо" class="type_form active">
+											<input type="button" value="Юр.лицо" class="type_form">
+										</span>
+									</h3>
+									<p>
+										Информация о покупателе
+										<span>*- обязательно для заполнения</span>
+									</p>
+									<label>
+										<i class="fa fa-user" aria-hidden="true"></i>
+										<input type="text" placeholder="Ваше имя*">
+									</label>
+									<label>
+										<i class="fa fa-phone" aria-hidden="true"></i>
+										<input type="text" placeholder="Ваш телефон*" class="error">
+									</label>
+									<label>
+										<i class="fa fa-envelope" aria-hidden="true"></i>
+										<input type="text" placeholder="Ваш @mail">
+									</label>
+									<label>
+										<i class="fa fa-envelope" aria-hidden="true"></i>
+										<input type="text" placeholder="Индекс">
+									</label>
+									<label>
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										<input type="text" placeholder="Местоположение">
+									</label>
+									<label>
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+										<input type="text" placeholder="Адрес доставки*">
+									</label>
+								</div>
+								<div class="grey type_delivery">
+									<h3 class="points">
+										<span>Выберите тип доставки</span>
+										<span></span>
+									</h3>
+									<div class="select_types">
+										<label>
+											<div>
+												<input type="radio" name="dev-type">
+												<span><img src="img/pay/car_dev.svg" alt=""></span>
+											</div>
+											<div>
+												<b>Доставка курьером по г.Москве</b>
+												Доставка осуществляется по г. Москве в пределах МКАД в течение дня в удобное для вас время.
+											</div>
+											<div>590 руб.</div>
+										</label>
+										<label>
+											<div>
+												<input type="radio" name="dev-type">
+												<span><img src="img/pay/car_dev.svg" alt=""></span>
+											</div>
+											<div>
+												<b>Самовывоз</b>
+												Вы можете самостоятельно забрать заказ из нашего магазина.
+											</div>
+											<div>0 </div>
+										</label>
+										<label>
+											<div>
+												<input type="radio" name="dev-type">
+												<span><img src="img/pay/pochta.png" alt=""></span>
+											</div>
+											<div>
+												<b>Почта России (расчёт на основании табличных данных) (Наземный транспорт)</b>
+											</div>
+											<div><a href="#">Рассчитать стоимость</a></div>
+										</label>
+										<label>
+											<div>
+												<input type="radio" name="dev-type">
+												<span><img src="img/pay/pochta.png" alt=""></span>
+											</div>
+											<div>
+												<b>Почта России (расчёт на основании табличных данных) (Воздушный транспорт)</b>
+												Авиаотправлениями называются почтовые отправления, принимаемые для пересылки на всем пути или на отдельных его участках воздушным транспортом.
+											</div>
+											<div><a href="#">Рассчитать стоимость</a></div>
+										</label>
 									</div>
-									<div class="table_basket_img">
-										<img src="img/vtov1.jpg" alt="">
+								</div>
+								
+								<div class="grey pay_type">
+									<h3>
+										<span>Выберите тип оплаты</span>
+										<span></span>
+									</h3>
+									<div class="pay_electron">
+										<label>
+											<input type="radio" name="pay-type">
+											<span><img src="img/pay/yad.png" alt=""></span>
+											<b>Яндекс. Деньги</b>
+										</label>
+										<label>
+											<input type="radio" name="pay-type">
+											<span><img src="img/pay/cards.png" alt=""></span>
+											<b>Банковские карты</b>
+										</label>
+										<label>
+											<input type="radio" name="pay-type">
+											<span><img src="img/pay/givi.jpg" alt=""></span>
+											<b>Терминал</b>
+										</label>
 									</div>
-								</td>
-								<td>
-									<p>Примерочная угловая с зеркалом</p>
-									Артикул: <span>ПВ-25-25ВА2В-1</span>
-								</td>
-								<td>
-									<input type="number" min="1" value="1">
-								</td>
-								<td>
-									<div  class="select_custom">
-										<select>
-											<option>Венге</option>
-											<option>Венге</option>
-											<option>Венге</option>
-										</select>
+									<div class="select_types">
+										
+										<label>
+											<div>
+												<input type="radio" name="pay-type">
+												<span><img src="img/pay/courier.svg" alt=""></span>
+											</div>
+											<div>
+												<b>Наличными курьеру</b>
+												Оплата наличными при получении заказа курьеру.
+											</div>
+											<div> </div>
+										</label>
+										<label>
+											<div>
+												<input type="radio" name="pay-type">
+												<span><img src="img/pay/sberbank.png" alt=""></span>
+											</div>
+											<div>
+												<b>Сбербанк</b>
+												Вы можете оплатить заказ в любом отделении Сбербанка. За услугу по переводу денег с Вас возьмут от 3 до 7% от стоимости заказа, в зависимости от региона. Перечисление денег займет порядка 10 дней.
+											</div>
+											<div> </div>
+										</label>
+										<label>
+											<div>
+												<input type="radio" name="pay-type">
+												<span><img src="img/pay/nal.jpg" alt=""></span>
+											</div>
+											<div>
+												<b>Наложенный платеж</b>
+												Оплата с помощью наложенного платежа
+											</div>
+											<div> </div>
+										</label>
 									</div>
-								</td>
-								<td>
-									<b>7 345 руб.</b>
-								</td>
-								<td>
-									<b>7 345 руб.</b>
-									<div class="del"></div>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<div class="favorites">
-										<i class="fa fa-star-o" aria-hidden="true"></i>
-									</div>
-									<div class="table_basket_img">
-										<img src="img/vtov1.jpg" alt="">
-									</div>
-								</td>
-								<td>
-									<p>Примерочная угловая с зеркалом</p>
-									Артикул: <span>ПВ-25-25ВА2В-1</span>
-								</td>
-								<td>
-									<input type="number" min="1" value="1">
-								</td>
-								<td>
-									<div  class="select_custom">
-										<select>
-											<option>Венге</option>
-											<option>Венге</option>
-											<option>Венге</option>
-										</select>
-									</div>
-								</td>
-								<td>
-									<b>7 345 руб.</b>
-								</td>
-								<td>
-									<b>7 345 руб.</b>
-									<div class="del"></div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<div class="table_basket_footer">
-						<a href="#" class="btn btn_next">Продолжить покупки</a>
-						Итоговая стоимость:
-						<b>13 345 руб.</b>
-						<a href="#" class="btn btn_table_basket">ОФОРМИТЬ ЗАКАЗ</a>
+								</div>
+								<div class="rezult_summ points">
+									<span>Итоговая стоимость с учетом доставки</span>
+									<span></span>
+									<span>13 345 руб.</span>
+								</div>
+								<p class="grey_text">Нажимая на кнопку "оформить заказ", я подтверждаю свое согласие с <a href="#">"публичной офертой"</a></p>
+								<input type="submit" value="ПОДТВЕРДИТЬ ЗАКАЗ" class="btn btn_ord">
+								<p class="grey_text letter_spes">* Стоимость доставки и итоговую стоимость уточняйте у менеджера</p>
+							</form>
+						</div>
+						<div class="right">
+							<h3>Ваши покупки</h3>
+							<table>
+								<tr>
+									<td><div class="img"><img src="img/slider_img.png" alt=""></div></td>
+									<td>
+										<b>Примерочная угловая с зеркалом</b>
+										<span>Артикул:</span> ПВ-25-25ВА2В-1
+										<div class="price">7 345 руб.</div>
+									</td>
+									<td>
+										<input type="text" value="2" readonly>
+									</td>
+								</tr>
+								<tr>
+									<td><div class="img"><img src="img/slider_img.png" alt=""></div></td>
+									<td>
+										<b>Примерочная угловая с зеркалом</b>
+										<span>Артикул:</span> ПВ-25-25ВА2В-1
+										<div class="price">7 345 руб.</div>
+									</td>
+									<td>
+										<input type="text" value="2" readonly>
+									</td>
+								</tr>
+							</table>
+							<div class="price_main_info">
+								<p class="points">
+									<span>Общая стоимость:</span>
+									<span></span>
+									<span>13 345 руб.</span>
+								</p>
+								<p class="points">
+									<span>Стоимость доставки:</span>
+									<span></span>
+									<span>13 345 руб.</span>
+								</p>
+							</div>
+							<div class="itogo points">
+								<span>Итого:</span>
+								<span></span>
+								<span>13 345 руб.</span>
+							</div>
+							<p class="letter_spes grey_text">* Стоимость доставки и итоговую стоимость уточняйте у менеджера</p>
+						</div>
 					</div>
-					<div class="dop_info_basket">* Стоимость доставки и итоговую стоимость уточняйте у менеджера</div>
-					
-					
-					<div class="you_viev with_him_buy">
-						<h3>
-							<i class="fa fa-cart-plus" aria-hidden="true"></i> 
-							C этим товаром покупают
-						</h3>
-						<ul>
-							<li>
-								<div class="img_blok">
-									<img src="img/vtov1.jpg" alt="">
-									<div class="detal_t">
-										<div class="hit">ХИТ</div>
-										<div class="new">НОВОЕ</div>
-										<div class="stock">АКЦИЯ</div>
-									</div>
-								</div>
-								<a class="name">Примерочная с зеркалом П-1</a>
-								<div class="price">
-									<div class="old_price"><span>14 220 руб.</span></div>
-									<b>13 345 руб.</b>
-								</div>
-								<button class="btn">
-									<i class="fa fa-shopping-cart" aria-hidden="true"></i> 
-									В КОРЗИНУ
-								</button>
-								<p>
-									<span>Арт.: </span> ПВ-2,5-25Ва2В-1
-								</p>
-								<div class="hidden_product_info">
-									<button class="btn_hiden">Купить быстро</button>
-									Ширина <span>500</span><br>
-									Длинна ст <span>500</span><br>
-									Ширина трошк <span>500</span>
-								</div>
-							</li>
-							<li>
-								<div class="img_blok">
-									<img src="img/vtov1.jpg" alt="">
-									<div class="detal_t">
-										<div class="hit">ХИТ</div>
-									</div>
-								</div>
-								<a class="name">Примерочная с зеркалом с зеркалом П-1</a>
-								<div class="price">
-									<div class="old_price"><span>14 220 руб.</span></div>
-									<b>13 345 руб.</b>
-								</div>
-								<button class="btn">
-									<i class="fa fa-shopping-cart" aria-hidden="true"></i> 
-									В КОРЗИНУ
-								</button>
-								<p>
-									<span>Арт.: </span> ПВ-2,5-25Ва2В-1
-								</p>
-								<div class="hidden_product_info">
-									<button class="btn_hiden">Купить быстро</button>
-									Ширина <span>500</span><br>
-									Длинна ст <span>500</span><br>
-									Ширина трошк <span>500</span>
-								</div>
-							</li>
-							<li>
-								<div class="img_blok">
-									<img src="img/vtov1.jpg" alt="">
-									<div class="detal_t">
-										<div class="hit">ХИТ</div>
-										<div class="stock">АКЦИЯ</div>
-									</div>
-								</div>
-								<a class="name">Примерочная с зеркалом П-1</a>
-								<div class="price">
-									<div class="old_price"><span>14 220 руб.</span></div>
-									<b>13 345 руб.</b>
-								</div>
-								<button class="btn">
-									<i class="fa fa-shopping-cart" aria-hidden="true"></i> 
-									В КОРЗИНУ
-								</button>
-								<p>
-									<span>Арт.: </span> ПВ-2,5-25Ва2В-1
-								</p>
-								<div class="hidden_product_info">
-									<button class="btn_hiden">Купить быстро</button>
-									Ширина <span>500</span><br>
-									Длинна ст <span>500</span><br>
-									Ширина трошк <span>500</span>
-								</div>
-							</li>
-							<li>
-								<div class="img_blok">
-									<img src="img/vtov1.jpg" alt="">
-									<div class="detal_t">
-										<div class="new">НОВОЕ</div>
-										<div class="stock">АКЦИЯ</div>
-									</div>
-								</div>
-								<a class="name">Примерочная с зеркалом П-1</a>
-								<div class="price">
-									<div class="old_price"><span>14 220 руб.</span></div>
-									<b>13 345 руб.</b>
-								</div>
-								<button class="btn">
-									<i class="fa fa-shopping-cart" aria-hidden="true"></i> 
-									В КОРЗИНУ
-								</button>
-								<p>
-									<span>Арт.: </span> ПВ-2,5-25Ва2В-1
-								</p>
-								<div class="hidden_product_info">
-									<button class="btn_hiden">Купить быстро</button>
-									Ширина <span>500</span><br>
-									Длинна ст <span>500</span><br>
-									Ширина трошк <span>500</span>
-								</div>
-							</li>
-							<li>
-								<div class="img_blok">
-									<img src="img/vtov1.jpg" alt="">
-									<div class="detal_t">
-										<div class="new">НОВОЕ</div>
-										<div class="stock">АКЦИЯ</div>
-									</div>
-								</div>
-								<a class="name">Примерочная с зеркалом П-1</a>
-								<div class="price">
-									<div class="old_price"><span>14 220 руб.</span></div>
-									<b>13 345 руб.</b>
-								</div>
-								<button class="btn">
-									<i class="fa fa-shopping-cart" aria-hidden="true"></i> 
-									В КОРЗИНУ
-								</button>
-								<p>
-									<span>Арт.: </span> ПВ-2,5-25Ва2В-1
-								</p>
-								<div class="hidden_product_info">
-									<button class="btn_hiden">Купить быстро</button>
-									Ширина <span>500</span><br>
-									Длинна ст <span>500</span><br>
-									Ширина трошк <span>500</span>
-								</div>
-							</li>
-						</ul>
-					</div>
-					
-					<div class="you_viev">
-						<h3>
-							<i class="fa fa-eye" aria-hidden="true"></i>
-							Вы просматривали
-						</h3>
-						<ul>
-							<li>
-								<div class="img_blok">
-									<img src="img/vtov1.jpg" alt="">
-									<div class="detal_t">
-										<div class="hit">ХИТ</div>
-										<div class="new">НОВОЕ</div>
-										<div class="stock">АКЦИЯ</div>
-									</div>
-								</div>
-								<a class="name">Примерочная с зеркалом П-1</a>
-								<div class="price">
-									<div class="old_price"><span>14 220 руб.</span></div>
-									<b>13 345 руб.</b>
-								</div>
-								<button class="btn">
-									<i class="fa fa-shopping-cart" aria-hidden="true"></i> 
-									В КОРЗИНУ
-								</button>
-								<p>
-									<span>Арт.: </span> ПВ-2,5-25Ва2В-1
-								</p>
-								<div class="favorites">
-									<i class="fa fa-star-o" aria-hidden="true"></i>
-								</div>
-								<div class="hidden_product_info">
-									<button class="btn_hiden">Купить быстро</button>
-									Ширина <span>500</span><br>
-									Длинна ст <span>500</span><br>
-									Ширина трошк <span>500</span>
-								</div>
-							</li>
-							<li>
-								<div class="img_blok">
-									<img src="img/vtov1.jpg" alt="">
-									<div class="detal_t">
-										<div class="hit">ХИТ</div>
-										<div class="new">НОВОЕ</div>
-										<div class="stock">АКЦИЯ</div>
-									</div>
-								</div>
-								<a class="name">Примерочная с зеркалом П-1</a>
-								<div class="price">
-									<div class="old_price"><span>14 220 руб.</span></div>
-									<b>13 345 руб.</b>
-								</div>
-								<button class="btn">
-									<i class="fa fa-shopping-cart" aria-hidden="true"></i> 
-									В КОРЗИНУ
-								</button>
-								<p>
-									<span>Арт.: </span> ПВ-2,5-25Ва2В-1
-								</p>
-								<div class="favorites">
-									<i class="fa fa-star-o" aria-hidden="true"></i>
-								</div>
-								<div class="hidden_product_info">
-									<button class="btn_hiden">Купить быстро</button>
-									Ширина <span>500</span><br>
-									Длинна ст <span>500</span><br>
-									Ширина трошк <span>500</span>
-								</div>
-							</li>
-							<li>
-								<div class="img_blok">
-									<img src="img/vtov1.jpg" alt="">
-									<div class="detal_t">
-										<div class="hit">ХИТ</div>
-									</div>
-								</div>
-								<a class="name">Примерочная с зеркалом с зеркалом П-1</a>
-								<div class="price">
-									<div class="old_price"><span>14 220 руб.</span></div>
-									<b>13 345 руб.</b>
-								</div>
-								<button class="btn">
-									<i class="fa fa-shopping-cart" aria-hidden="true"></i> 
-									В КОРЗИНУ
-								</button>
-								<p>
-									<span>Арт.: </span> ПВ-2,5-25Ва2В-1
-								</p>
-								<div class="favorites">
-									<i class="fa fa-star-o" aria-hidden="true"></i>
-								</div>
-								<div class="hidden_product_info">
-									<button class="btn_hiden">Купить быстро</button>
-									Ширина <span>500</span><br>
-									Длинна ст <span>500</span><br>
-									Ширина трошк <span>500</span>
-								</div>
-							</li>
-							<li>
-								<div class="img_blok">
-									<img src="img/vtov1.jpg" alt="">
-									<div class="detal_t">
-										<div class="hit">ХИТ</div>
-										<div class="stock">АКЦИЯ</div>
-									</div>
-								</div>
-								<a class="name">Примерочная с зеркалом П-1</a>
-								<div class="price">
-									<div class="old_price"><span>14 220 руб.</span></div>
-									<b>13 345 руб.</b>
-								</div>
-								<button class="btn">
-									<i class="fa fa-shopping-cart" aria-hidden="true"></i> 
-									В КОРЗИНУ
-								</button>
-								<p>
-									<span>Арт.: </span> ПВ-2,5-25Ва2В-1
-								</p>
-								<div class="favorites">
-									<i class="fa fa-star-o" aria-hidden="true"></i>
-								</div>
-								<div class="hidden_product_info">
-									<button class="btn_hiden">Купить быстро</button>
-									Ширина <span>500</span><br>
-									Длинна ст <span>500</span><br>
-									Ширина трошк <span>500</span>
-								</div>
-							</li>
-							<li>
-								<div class="img_blok">
-									<img src="img/vtov1.jpg" alt="">
-									<div class="detal_t">
-										<div class="new">НОВОЕ</div>
-										<div class="stock">АКЦИЯ</div>
-									</div>
-								</div>
-								<a class="name">Примерочная с зеркалом П-1</a>
-								<div class="price">
-									<div class="old_price"><span>14 220 руб.</span></div>
-									<b>13 345 руб.</b>
-								</div>
-								<button class="btn">
-									<i class="fa fa-shopping-cart" aria-hidden="true"></i> 
-									В КОРЗИНУ
-								</button>
-								<p>
-									<span>Арт.: </span> ПВ-2,5-25Ва2В-1
-								</p>
-								<div class="favorites">
-									<i class="fa fa-star-o" aria-hidden="true"></i>
-								</div>
-								<div class="hidden_product_info">
-									<button class="btn_hiden">Купить быстро</button>
-									Ширина <span>500</span><br>
-									Длинна ст <span>500</span><br>
-									Ширина трошк <span>500</span>
-								</div>
-							</li>
-						</ul>
-						
-						<a href="#" class="viev_all">Смотреть все<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-					</div>
-					
 					
 					<div class="cons">
 						<div class="cons_botton">

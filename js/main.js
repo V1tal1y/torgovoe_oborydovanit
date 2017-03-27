@@ -112,5 +112,12 @@ $(document).ready(function(){
 		$(this).toggleClass('active');
 	});
 	
+	$('.type_form').click(function(){
+		$('.type_form').each(function(){
+			$(this).removeClass('active');
+		});
+		$(this).addClass('active');
+	});
+	
 	
 })
