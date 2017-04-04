@@ -17,7 +17,7 @@ $(document).ready(function(){
 	
 	$('.product_slider_content').slick({
 		infinite: true,
-		slidesToShow: 1,
+		slidesToShow: 4,
 		slidesToScroll: 1,
 		dots: false,
 		prevArrow: '<button> <i class="fa fa-angle-left" aria-hidden="true"></i> Назад</button>',
@@ -45,7 +45,8 @@ $(document).ready(function(){
 		slidesToScroll: 1,
 		asNavFor: '.product_slider_for',
 		dots: false,
-		vertical: true
+		vertical: true,
+		focusOnSelect: true
 	});
 	
 	

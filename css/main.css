@@ -583,7 +583,8 @@ nav {
   font-size: 14px; }
 
 .you_viev {
-  text-align: center; }
+  text-align: center;
+  outline: none; }
   .you_viev h3 {
     text-align: center;
     font-size: 18px;
@@ -879,12 +880,16 @@ footer {
     padding-left: 70px;
     width: 230px;
     float: left;
-    background: #ced247; }
+    background: #ced247;
+    word-wrap: wrap; }
     footer .right b {
       display: block;
       padding: 28px 0 22px; }
       footer .right b:first-child {
         padding-top: 53px; }
+
+.slick-initialized .slick-slide {
+  outline: none; }
 
 h3.yellow {
   color: #f1b333;
@@ -1672,10 +1677,10 @@ input::-webkit-inner-spin-button {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-bottom: 25px; }
   .page_list_nav a {
     display: block;
@@ -1689,7 +1694,10 @@ input::-webkit-inner-spin-button {
     font-weight: bold;
     text-align: center;
     font-size: 16px;
-    position: relative; }
+    position: relative;
+    margin-right: 16px; }
+    .page_list_nav a:last-child, .page_list_nav a:nth-child(4n+4) {
+      margin-right: 0; }
     .page_list_nav a:after {
       content: '';
       opacity: 0;
