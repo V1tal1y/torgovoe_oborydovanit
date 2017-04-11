@@ -582,6 +582,17 @@ nav {
   margin: 0 auto 30px;
   font-size: 14px; }
 
+.slide.you_viev {
+  width: 204px;
+  margin-right: 16px; }
+
+.big_content_block .you_viev ul li {
+  margin-right: 35px; }
+  .big_content_block .you_viev ul li:nth-child(4n+4) {
+    margin-right: 35px; }
+  .big_content_block .you_viev ul li:last-child, .big_content_block .you_viev ul li:nth-child(5n+5) {
+    margin-right: 0; }
+
 .you_viev {
   text-align: center;
   outline: none; }
@@ -603,10 +614,6 @@ nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
@@ -614,7 +621,10 @@ nav {
     .you_viev ul li {
       border: 1px solid #d1d1d1;
       width: 202px;
-      position: relative; }
+      position: relative;
+      margin-right: 16px; }
+      .you_viev ul li:last-child, .you_viev ul li:nth-child(4n+4) {
+        margin-right: 0; }
       .you_viev ul li:hover {
         border-color: #CED247;
         -webkit-box-shadow: 0 5px 10px rgba(20, 39, 53, 0.2);
@@ -896,12 +906,15 @@ h3.yellow {
   font-size: 20px;
   padding-bottom: 20px; }
 
-ol li {
+ol li,
+ul.text_list li {
   overflow: hidden;
   padding: 5px 0; }
-  ol li:last-child {
+  ol li:last-child,
+  ul.text_list li:last-child {
     padding-bottom: 0; }
-  ol li:before {
+  ol li:before,
+  ul.text_list li:before {
     content: '•';
     font-size: 30px;
     display: inline-block;
@@ -2052,7 +2065,8 @@ ol.ponter_mini li:before {
 
 .product_slider_main {
   position: relative;
-  height: 480px; }
+  height: 480px;
+  width: 882px; }
   .product_slider_main .slick-arrow {
     position: relative;
     padding-left: 98px;
@@ -2081,7 +2095,7 @@ ol.ponter_mini li:before {
   .product_slider_main .slick-next {
     padding: 0 98px 0 0;
     left: auto;
-    right: 0; }
+    right: 16px; }
     .product_slider_main .slick-next i {
       left: auto;
       right: 0; }

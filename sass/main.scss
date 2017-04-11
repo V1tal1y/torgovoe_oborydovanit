@@ -620,6 +620,22 @@ nav{
 		font-size: 14px;
 	}
 }
+
+.slide.you_viev{
+	width: 204px;
+	margin-right: 16px;
+}
+.big_content_block .you_viev ul li{
+	margin-right: 35px;
+	
+	&:nth-child(4n+4){
+		margin-right: 35px;
+	}
+	&:last-child,
+	&:nth-child(5n+5){
+		margin-right: 0;
+	}
+}
 .you_viev{
 	text-align: center;
 	outline: none;
@@ -643,7 +659,6 @@ nav{
 		display: -ms-flex;
 		display: -o-flex;
 		display: flex;
-		justify-content: space-between;
 		flex-wrap: wrap;
 		margin-bottom: 21px;
 		
@@ -651,7 +666,12 @@ nav{
 			border: 1px solid #d1d1d1;
 			width: 202px;
 			position: relative;
+			margin-right: 16px;
 			
+			&:last-child,
+			&:nth-child(4n+4){
+				margin-right: 0;
+			}
 			&:hover{
 				border-color: #CED247;
 				box-shadow: 0 5px 10px rgba(20, 39, 53, 0.2);
@@ -1003,7 +1023,8 @@ h3.yellow{
 	font-size: 20px;
 	padding-bottom: 20px;
 }
-ol{
+ol,
+ul.text_list{
 	li{
 		overflow: hidden;
 		padding: 5px 0;
@@ -2378,6 +2399,7 @@ ol.ponter_mini li:before{
 .product_slider_main{
 	position: relative;
 	height: 480px;
+	width: 882px;
 	
 	.slick-arrow{
 		position: relative;
@@ -2411,7 +2433,7 @@ ol.ponter_mini li:before{
 	.slick-next{
 		padding: 0 98px 0 0;
 		left: auto;
-		right: 0;
+		right: 16px;
 		
 		i{
 			left: auto;
