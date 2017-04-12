@@ -1449,16 +1449,19 @@ h3.more_article {
         opacity: 0.7; }
   .pruduct_page .product_slider_for {
     padding: 70px 0 80px;
-    width: 300px;
+    width: 400px;
     height: 370px;
     line-height: 370px;
     vertical-align: middle;
     text-align: center;
-    float: left; }
+    float: left;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box; }
     .pruduct_page .product_slider_for img {
       display: inline;
       line-height: 370px;
-      vertical-align: middle; }
+      vertical-align: middle;
+      max-width: 100%; }
   .pruduct_page .detal_t {
     bottom: 9px;
     width: 100%;
